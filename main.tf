@@ -8,9 +8,11 @@ module "profile" {
   users = module.users.defs
 
   profiles = {
-    "3" = {
-      location = "osaka"
-    }
+    # Uncommenting below fixes the problem.
+    #
+    # "3" = {
+    #   location = "osaka"
+    # }
     "4" = {
       location = "tokyo"
     }
